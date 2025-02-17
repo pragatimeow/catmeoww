@@ -18,7 +18,7 @@ navLinks.forEach(link => {
 
         // 4. Fetch and load the content with a delay for the fade-out
         setTimeout(() => {
-            fetch(`${targetPage}.html`)
+            fetch(`/content/${targetPage}.html`)
               .then(response => response.text())
               .then(html => {
                     contentArea.innerHTML = html; // Load the HTML into the content area
